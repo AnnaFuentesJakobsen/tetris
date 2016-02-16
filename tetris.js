@@ -1,16 +1,14 @@
 var y = 0;
 
 var gameLoop = function(){
-	y = y + 10;
+	if (y <= 80) {
+		y = y + 10;
+	}
 
 	ctx.fillStyle = "#9E969E";
 	ctx.fillRect(0,0,100,100);
 	ctx.fillStyle = "#EC7DF0";
 	ctx.fillRect(0,y,10,10);
-
-	if(y > 50){
-		console.log("Kurt");
-	}
 }
 
 
